@@ -1,0 +1,120 @@
+{
+    "header":
+    [
+     {"img":"r/youku1.jpeg","title":"［电视］花千骨","id":1},
+     {"img":"r/youku2.jpeg","title":"什么鬼电视剧","id":2},
+     {"img":"r/youku3.jpeg","title":"［自拍］大长腿美女","id":3},
+     {"img":"r/youku4.jpeg","title":"［电影］超能查派","id":4},
+     {"img":"r/youku5.jpeg","title":"［电影］冲锋车","id":5},
+     {"img":"r/youku6.jpeg","title":"［情感］陈翔六点半","id":6}
+     ],
+    
+    "data":
+    [
+     {},//占位专用
+     {
+         "header":
+         {
+             "left":null,
+             "right":null
+         },
+         "list":
+         [
+              {"id":1,"img":"r/data/data1.jpeg","title":"抗战阅兵徒步方队揭秘","tag":"奇葩报视频"},
+              {"id":2,"img":"r/data/data2.jpeg","title":"[亚冠]恒大3-1柏太阳神","tag":"新京报视频"},
+              {"id":3,"img":"r/data/data3.jpeg","title":"不忍直视!甜馨诺一神经父母","tag":""},
+              {"id":4,"img":"r/data/data4.jpeg","title":"[锋味]陈伟霆井柏然合伙抢亲","tag":"12道锋味 第二季"}
+          ]
+     },
+     {
+         "header":
+         {
+             "left":{"title":"最佳原创","id":1},
+             "right":[{"title":"微电影","id":1},{"title":"出品","id":2},{"title":"网络剧","id":3}]
+         },
+         "list":
+         [
+              {"id":1,"img":"r/data/o1.jpeg","title":"绝不能让女朋友看的捆绑avi","tag":"莱可传媒"},
+              {"id":2,"img":"r/data/o2.jpeg","title":"粉色小内乐队娇嗔亮相","tag":"<变身情人>"},
+              {"id":3,"img":"r/data/o3.jpeg","title":"绝症巨星聚光灯外的故事","tag":"电影纵贯线"},
+              {"id":4,"img":"r/data/o4.jpeg","title":"校园男生巨幅海报求婚引骚乱","tag":""}
+         ]
+     },
+     {
+         "header":
+         {
+             "left":{"title":"电视剧","id":2},
+             "right":[{"title":"大陆剧","id":1},{"title":"TVB","id":2},{"title":"韩剧","id":3}]
+         },
+         "list":
+         [
+              {"id":1,"img":"r/data/d1.jpeg","title":"神犬小七 TV版","tag":"萌宠大作战!小七来袭"},
+              {"id":2,"img":"r/data/d2.jpeg","title":"少年神探狄仁杰 TV版","tag":"黄宗泽马天宇男神CP"},
+              {"id":3,"img":"r/data/d3.jpeg","title":"铁在烧","tag":"三兄弟演绎民国古惑仔"},
+              {"id":4,"img":"r/data/d4.jpeg","title":"仙剑客栈 第一季","tag":"李逍遥手撕未来岳父"},
+              {"id":5,"img":"r/data/d5.jpeg","title":"孤独的美食家","tag":"郎骑竹马来 情深意面长"},
+              {"id":6,"img":"r/data/d6.jpeg","title":"特工卡特 第一季","tag":"美队女友开创\"神盾局\""}
+          ]
+     },
+     {
+         "header":
+         {
+             "left":{"title":"综艺","id":2},
+             "right":[{"title":"大陆综艺","id":1},{"title":"日韩","id":2},{"title":"自制","id":3}]
+         },
+         "list":
+         [
+              {"id":1,"img":"r/data/z1.jpeg","title":"震惊！美女腿太长容易早死","tag":"相征 第一季"},
+              {"id":2,"img":"r/data/z2.jpeg","title":"女星误闯男厕撞见导演遇尴尬","tag":"非常静距离 2015"},
+              {"id":3,"img":"r/data/z3.jpeg","title":"小鲜肉搞笑RAP坑惨队友","tag":"UP10TION"},
+              {"id":4,"img":"r/data/z4.jpeg","title":"台湾小人物誓言赚100万","tag":"听说 第一季"}
+          ]
+     },
+     {
+         "header":
+         {
+             "left":{"title":"音乐","id":2},
+             "right":null
+         },
+         "list":
+         [
+              {"id":1,"img":"r/data/y1.jpeg","title":"电臀热舞！金泫雅破尺度性感回归15禁曲","tag":""},
+              {"id":2,"img":"r/data/y2.jpeg","title":"韩新女团-Dream Candy","tag":"2015"},
+              {"id":3,"img":"r/data/y3.jpeg","title":"邓紫棋\"对嘴大比拼\"","tag":""},
+              {"id":4,"img":"r/data/y5.jpeg","title":"郝浩涵风骚指法\"加州旅馆\"","tag":""}
+          ]
+     },
+     {
+         "header":
+         {
+             "left":{"title":"游戏","id":2},
+             "right":null
+         },
+         "list":
+         [
+              {"id":1,"img":"r/data/yx1.jpeg","title":"暗黑3新版本国服上线","tag":"[中国游戏报道]"},
+              {"id":2,"img":"r/data/yx2.jpeg","title":"74包冠军试炼拓展卡开包与游玩","tag":"[炉石传说]"},
+              {"id":3,"img":"r/data/yx3.jpeg","title":"合金装备曾经是小编最喜爱的游戏","tag":"【小编点评】"},
+              {"id":4,"img":"r/data/yx4.jpeg","title":"小学生之手惩戒红领巾","tag":"来玩大奖赛精彩回放"}
+          ]
+     },
+     {
+         "header":
+         {
+             "left":{"title":"自频道广场","id":2},
+             "right":[{"title":"整蛊路人","id":1},{"title":"吃货任性","id":2},{"title":"女神","id":3}]
+         },
+         "list":
+         [
+              {"id":1,"img":"r/data/zp1.jpeg","title":"惊 色老头新招吃美女豆腐","tag":"big笑工坊"},
+              {"id":2,"img":"r/data/zp2.jpeg","title":"非洲女性割礼残忍过程曝光","tag":"VICE中国"},
+              {"id":3,"img":"r/data/zp3.jpeg","title":"穷女婿无尊严跪求丈母娘嫁女","tag":"飞碟说"},
+              {"id":4,"img":"r/data/zp4.jpeg","title":"懒癌晚期!我装作看不懂的样子","tag":"睡衣新闻台"},
+              {"id":5,"img":"r/data/y1.jpeg","title":"惊 色老头新招吃美女豆腐","tag":"[中国游戏报道]"},
+              {"id":6,"img":"r/data/d2.jpeg","title":"74包冠军试炼拓展卡开包与游玩","tag":"[炉石传说]"},
+              {"id":7,"img":"r/data/o3.jpeg","title":"合金装备曾经是小编最喜爱的游戏","tag":"【小编点评】"},
+              {"id":8,"img":"r/data/d6.jpeg","title":"小学生之手惩戒红领巾","tag":"来玩大奖赛精彩回放"}
+          ]
+     }
+     ]
+}
