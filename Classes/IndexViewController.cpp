@@ -8,10 +8,8 @@
 #include "IndexViewController.h"
 #include "CacheView.h"
 #include "MemberViewController.h"
-#include "HomeTavleViewCell.h"
 #include "VideoPlayViewController.h"
 #include "TableViewHeaderView.h"
-#include "RecommendView.h"
 #include "DataCollectionView.h"
 
 

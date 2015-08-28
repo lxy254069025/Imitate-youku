@@ -1,7 +1,6 @@
 
 
 #include "RootWindow.h"
-#include "FirstViewController.h"
 #include "ClassifyViewController.h"
 #include "SubscriptionViewController.h"
 #include "MineViewController.h"

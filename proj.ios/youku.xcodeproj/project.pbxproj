@@ -44,7 +44,6 @@
 		B04C0C0A1901207A009854FD /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B04C0BFE1901207A009854FD /* json_writer.cpp */; };
 		B04C0C0B1901207A009854FD /* sconscript in Resources */ = {isa = PBXBuildFile; fileRef = B04C0C001901207A009854FD /* sconscript */; };
 		B0621BE51AC3B871005EBCA7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = B0621BDB1AC3B871005EBCA7 /* fonts */; };
-		B0621E211AC3ECB0005EBCA7 /* FirstViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0621E1D1AC3ECB0005EBCA7 /* FirstViewController.cpp */; };
 		B0621E221AC3ECB0005EBCA7 /* RootWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0621E1F1AC3ECB0005EBCA7 /* RootWindow.cpp */; };
 		B0621E261AC3ECEC005EBCA7 /* r in Resources */ = {isa = PBXBuildFile; fileRef = B0621E251AC3ECEC005EBCA7 /* r */; };
 		B08C915A1B8B91260086A881 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B08C91591B8B91260086A881 /* Images.xcassets */; };
@@ -53,8 +52,6 @@
 		B08C916F1B8CB40E0086A881 /* ClassifyViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08C916D1B8CB40E0086A881 /* ClassifyViewController.cpp */; };
 		B08C91721B8CB4BA0086A881 /* SubscriptionViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08C91701B8CB4BA0086A881 /* SubscriptionViewController.cpp */; };
 		B08C91751B8CB5560086A881 /* MineViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08C91731B8CB5560086A881 /* MineViewController.cpp */; };
-		B08C91781B8CCA700086A881 /* HomeTavleViewCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08C91761B8CCA700086A881 /* HomeTavleViewCell.cpp */; };
-		B08C917D1B8CE2F40086A881 /* RecommendView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08C917B1B8CE2F40086A881 /* RecommendView.cpp */; };
 		B08C918D1B8D04F60086A881 /* VideoPlayViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08C918B1B8D04F60086A881 /* VideoPlayViewController.cpp */; };
 		B08C91931B8D5FDC0086A881 /* TableViewHeaderView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08C91911B8D5FDC0086A881 /* TableViewHeaderView.cpp */; };
 		B08C91A01B9051ED0086A881 /* IndexViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08C919E1B9051ED0086A881 /* IndexViewController.cpp */; };
@@ -175,8 +172,6 @@
 		B04C0C021901207A009854FD /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
 		B056375B195276CF00C63FAA /* CrossApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CrossApp.xcodeproj; path = ../../../CrossApp/proj.ios/CrossApp.xcodeproj; sourceTree = "<group>"; };
 		B0621BDB1AC3B871005EBCA7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
-		B0621E1D1AC3ECB0005EBCA7 /* FirstViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FirstViewController.cpp; path = ../Classes/FirstViewController.cpp; sourceTree = "<group>"; };
-		B0621E1E1AC3ECB0005EBCA7 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstViewController.h; path = ../Classes/FirstViewController.h; sourceTree = "<group>"; };
 		B0621E1F1AC3ECB0005EBCA7 /* RootWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RootWindow.cpp; path = ../Classes/RootWindow.cpp; sourceTree = "<group>"; };
 		B0621E201AC3ECB0005EBCA7 /* RootWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootWindow.h; path = ../Classes/RootWindow.h; sourceTree = "<group>"; };
 		B0621E251AC3ECEC005EBCA7 /* r */ = {isa = PBXFileReference; lastKnownFileType = folder; path = r; sourceTree = "<group>"; };
@@ -191,10 +186,6 @@
 		B08C91711B8CB4BA0086A881 /* SubscriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SubscriptionViewController.h; path = ../Classes/SubscriptionViewController.h; sourceTree = "<group>"; };
 		B08C91731B8CB5560086A881 /* MineViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MineViewController.cpp; path = ../Classes/MineViewController.cpp; sourceTree = "<group>"; };
 		B08C91741B8CB5560086A881 /* MineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MineViewController.h; path = ../Classes/MineViewController.h; sourceTree = "<group>"; };
-		B08C91761B8CCA700086A881 /* HomeTavleViewCell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HomeTavleViewCell.cpp; path = ../Classes/HomeTavleViewCell.cpp; sourceTree = "<group>"; };
-		B08C91771B8CCA700086A881 /* HomeTavleViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeTavleViewCell.h; path = ../Classes/HomeTavleViewCell.h; sourceTree = "<group>"; };
-		B08C917B1B8CE2F40086A881 /* RecommendView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RecommendView.cpp; path = ../Classes/RecommendView.cpp; sourceTree = "<group>"; };
-		B08C917C1B8CE2F40086A881 /* RecommendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RecommendView.h; path = ../Classes/RecommendView.h; sourceTree = "<group>"; };
 		B08C918B1B8D04F60086A881 /* VideoPlayViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VideoPlayViewController.cpp; path = ../Classes/VideoPlayViewController.cpp; sourceTree = "<group>"; };
 		B08C918C1B8D04F60086A881 /* VideoPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoPlayViewController.h; path = ../Classes/VideoPlayViewController.h; sourceTree = "<group>"; };
 		B08C91911B8D5FDC0086A881 /* TableViewHeaderView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TableViewHeaderView.cpp; path = ../Classes/TableViewHeaderView.cpp; sourceTree = "<group>"; };
@@ -357,8 +348,6 @@
 				B08C919A1B8F4BB20086A881 /* view */,
 				B08C91941B8D61520086A881 /* data */,
 				B08C917A1B8CE26F0086A881 /* widget */,
-				B0621E1D1AC3ECB0005EBCA7 /* FirstViewController.cpp */,
-				B0621E1E1AC3ECB0005EBCA7 /* FirstViewController.h */,
 				B0621E1F1AC3ECB0005EBCA7 /* RootWindow.cpp */,
 				B0621E201AC3ECB0005EBCA7 /* RootWindow.h */,
 				B0AD93E519207CA300EA40BB /* AppMacros.h */,
@@ -590,12 +579,8 @@
 		B08C917A1B8CE26F0086A881 /* widget */ = {
 			isa = PBXGroup;
 			children = (
-				B08C91761B8CCA700086A881 /* HomeTavleViewCell.cpp */,
-				B08C91771B8CCA700086A881 /* HomeTavleViewCell.h */,
 				B08C91601B8BC2B50086A881 /* CacheView.cpp */,
 				B08C91611B8BC2B50086A881 /* CacheView.h */,
-				B08C917B1B8CE2F40086A881 /* RecommendView.cpp */,
-				B08C917C1B8CE2F40086A881 /* RecommendView.h */,
 				B08C91911B8D5FDC0086A881 /* TableViewHeaderView.cpp */,
 				B08C91921B8D5FDC0086A881 /* TableViewHeaderView.h */,
 			);
@@ -715,11 +700,9 @@
 				B04C0C041901207A009854FD /* DictionaryHelper.cpp in Sources */,
 				B04C0C031901207A009854FD /* CSContentJsonDictionary.cpp in Sources */,
 				B08C91A01B9051ED0086A881 /* IndexViewController.cpp in Sources */,
-				B08C917D1B8CE2F40086A881 /* RecommendView.cpp in Sources */,
 				B0CA5A301A77A80B00BECD89 /* Reachability.m in Sources */,
 				B04C0C0A1901207A009854FD /* json_writer.cpp in Sources */,
 				B01A293A1994C6D200D42BA0 /* sqlite3.c in Sources */,
-				B0621E211AC3ECB0005EBCA7 /* FirstViewController.cpp in Sources */,
 				B04C0C081901207A009854FD /* json_value.cpp in Sources */,
 				15A3DA5D1682F826002FB0C5 /* HttpClient.cpp in Sources */,
 				B0405FF319CC03A100947287 /* LocalStorage.cpp in Sources */,
@@ -733,7 +716,6 @@
 				B04822BC19FA41F70019F1A7 /* CAAddress.mm in Sources */,
 				15A3DAED1682F8A6002FB0C5 /* CocosDenshion.m in Sources */,
 				B08C91751B8CB5560086A881 /* MineViewController.cpp in Sources */,
-				B08C91781B8CCA700086A881 /* HomeTavleViewCell.cpp in Sources */,
 				B04822C119FA41F70019F1A7 /* CALocation.mm in Sources */,
 				15A3DAEE1682F8A6002FB0C5 /* SimpleAudioEngine.mm in Sources */,
 				B04822C019FA41F70019F1A7 /* CADevice.mm in Sources */,
