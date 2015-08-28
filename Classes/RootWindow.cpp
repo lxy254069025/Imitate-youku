@@ -5,6 +5,7 @@
 #include "ClassifyViewController.h"
 #include "SubscriptionViewController.h"
 #include "MineViewController.h"
+#include "IndexViewController.h"
 
 static RootWindow* _window = NULL;
 RootWindow* RootWindow::create()
@@ -46,7 +47,7 @@ bool RootWindow::init()
     
     CAVector<CAViewController*> vec;
     
-    FirstViewController* _viewController = new FirstViewController();
+    IndexViewController* _viewController = new IndexViewController();
     _viewController->init();
     _viewController->autorelease();
     _viewController->setTabBarItem(CATabBarItem::create(UTF8("首页"), CAImage::create("r/navbar_icon_home_normal.png"),CAImage::create("r/navbar_icon_home_selected.png")));

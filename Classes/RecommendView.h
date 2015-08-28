@@ -11,7 +11,7 @@
 
 #include "RootWindow.h"
 
-class RecommendView : public CAView,CACollectionViewDataSource,CACollectionViewDelegate {
+class RecommendView : public CAView,CACollectionViewDataSource,CACollectionViewDelegate,CAScrollViewDelegate {
     
 public:
     RecommendView();

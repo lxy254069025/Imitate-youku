@@ -55,6 +55,7 @@ void RecommendView::initCollection() {
     m_collection->setCollectionViewDataSource(this);
     m_collection->setCollectionViewDelegate(this);
     m_collection->setScrollEnabled(false);
+    m_collection->setScrollViewDelegate(this);
     
     this->addSubview(m_collection);
 }
@@ -146,12 +147,12 @@ unsigned int RecommendView::numberOfRowsInSection(CACollectionView *collectionVi
 void RecommendView::collectionViewDidSelectCellAtIndexPath(CACollectionView *collectionView, unsigned int section, unsigned int row, unsigned int item) {
     int index = row * 2 + item;
     int v_id = m_listData[index]["id"].asInt();
-    CCLog("list video id: %d",v_id);
+    
     RootWindow::create()->getNavigationController()->pushViewController(VideoPlayViewController::create(v_id), true);
 }
 
 void RecommendView::collectionViewDidDeselectCellAtIndexPath(CACollectionView *collectionView, unsigned int section, unsigned int row, unsigned int item) {
-    
+    CCLog("asdf");
 }
 
 

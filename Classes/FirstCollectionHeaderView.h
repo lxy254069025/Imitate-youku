@@ -9,6 +9,24 @@
 #ifndef __youku__FirstCollectionHeaderView__
 #define __youku__FirstCollectionHeaderView__
 
-#include <stdio.h>
+#include "RootWindow.h"
+
+class FirstCollectionHeaderView : public CAView {
+    
+public:
+    FirstCollectionHeaderView();
+    
+    virtual ~FirstCollectionHeaderView();
+    
+    static FirstCollectionHeaderView* createWithFrame(const CADipRect& _ret);
+    
+    bool init(const CADipRect& _ret);
+    
+private:
+    CADipSize winSize;
+    
+private:
+    void onTopHeaderClick(CAControl *btn,CCPoint point);
+};
 
 #endif /* defined(__youku__FirstCollectionHeaderView__) */

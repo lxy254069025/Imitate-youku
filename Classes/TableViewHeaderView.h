@@ -44,7 +44,7 @@ private:
     
     CAButton *m_rightBtn3;
     
-    
+    CAView *m_navigation;
 };
 
 #endif /* defined(__youku__TableViewHeaderView__) */

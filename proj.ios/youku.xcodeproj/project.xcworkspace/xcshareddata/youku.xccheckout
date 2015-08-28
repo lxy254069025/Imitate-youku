@@ -12,20 +12,24 @@
 	<dict>
 		<key>630594A0C3AF0041EB86DE5D805A5B25A32E1B5D</key>
 		<string>https://git.oschina.net/9miao/CrossApp.git</string>
+		<key>E8F194DE07E993D933F18F9BFB615B0DEBC4247D</key>
+		<string>https://github.com/lxy254069025/Imitate-youku.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>projects/youku/proj.ios/youku.xcodeproj</string>
+	<string>proj.ios/youku.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>630594A0C3AF0041EB86DE5D805A5B25A32E1B5D</key>
 		<string>../../../../..</string>
+		<key>E8F194DE07E993D933F18F9BFB615B0DEBC4247D</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://git.oschina.net/9miao/CrossApp.git</string>
+	<string>https://github.com/lxy254069025/Imitate-youku.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>630594A0C3AF0041EB86DE5D805A5B25A32E1B5D</string>
+	<string>E8F194DE07E993D933F18F9BFB615B0DEBC4247D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -34,7 +38,15 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>630594A0C3AF0041EB86DE5D805A5B25A32E1B5D</string>
 			<key>IDESourceControlWCCName</key>
-			<string>CrossApp</string>
+			<string>..</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E8F194DE07E993D933F18F9BFB615B0DEBC4247D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>youku</string>
 		</dict>
 	</array>
 </dict>
