@@ -20,6 +20,7 @@ public:
     
     CREATE_FUNC(MemberViewController);
     
+    void onBtnFanhui(CAControl *btn,CCPoint point);
 protected:
     void viewDidLoad();
     
@@ -27,8 +28,6 @@ protected:
     
 private:
     void loadNavigationItem();
-    
-    void onBtnFanhui(CAControl *btn,CCPoint point);
     
 private:
     CADipSize winSize;

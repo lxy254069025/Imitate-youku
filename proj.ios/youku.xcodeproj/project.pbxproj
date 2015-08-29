@@ -43,6 +43,7 @@
 		B04C0C091901207A009854FD /* json_valueiterator.inl in Resources */ = {isa = PBXBuildFile; fileRef = B04C0BFD1901207A009854FD /* json_valueiterator.inl */; };
 		B04C0C0A1901207A009854FD /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B04C0BFE1901207A009854FD /* json_writer.cpp */; };
 		B04C0C0B1901207A009854FD /* sconscript in Resources */ = {isa = PBXBuildFile; fileRef = B04C0C001901207A009854FD /* sconscript */; };
+		B05100181B91DDAC00FBAAA3 /* HttpImageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05100161B91DDAC00FBAAA3 /* HttpImageView.cpp */; };
 		B0621BE51AC3B871005EBCA7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = B0621BDB1AC3B871005EBCA7 /* fonts */; };
 		B0621E221AC3ECB0005EBCA7 /* RootWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0621E1F1AC3ECB0005EBCA7 /* RootWindow.cpp */; };
 		B0621E261AC3ECEC005EBCA7 /* r in Resources */ = {isa = PBXBuildFile; fileRef = B0621E251AC3ECEC005EBCA7 /* r */; };
@@ -170,6 +171,8 @@
 		B04C0C001901207A009854FD /* sconscript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sconscript; sourceTree = "<group>"; };
 		B04C0C011901207A009854FD /* value.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = value.h; sourceTree = "<group>"; };
 		B04C0C021901207A009854FD /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		B05100161B91DDAC00FBAAA3 /* HttpImageView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HttpImageView.cpp; path = ../Classes/HttpImageView.cpp; sourceTree = "<group>"; };
+		B05100171B91DDAC00FBAAA3 /* HttpImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpImageView.h; path = ../Classes/HttpImageView.h; sourceTree = "<group>"; };
 		B056375B195276CF00C63FAA /* CrossApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CrossApp.xcodeproj; path = ../../../CrossApp/proj.ios/CrossApp.xcodeproj; sourceTree = "<group>"; };
 		B0621BDB1AC3B871005EBCA7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		B0621E1F1AC3ECB0005EBCA7 /* RootWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RootWindow.cpp; path = ../Classes/RootWindow.cpp; sourceTree = "<group>"; };
@@ -345,6 +348,7 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B08C91A71B91B0660086A881 /* base */,
 				B08C919A1B8F4BB20086A881 /* view */,
 				B08C91941B8D61520086A881 /* data */,
 				B08C917A1B8CE26F0086A881 /* widget */,
@@ -602,8 +606,17 @@
 				B08C91A21B9057540086A881 /* DataCollectionView.h */,
 				B08C91A41B90D9F30086A881 /* FirstCollectionHeaderView.cpp */,
 				B08C91A51B90D9F30086A881 /* FirstCollectionHeaderView.h */,
+				B05100161B91DDAC00FBAAA3 /* HttpImageView.cpp */,
+				B05100171B91DDAC00FBAAA3 /* HttpImageView.h */,
 			);
 			name = view;
+			sourceTree = "<group>";
+		};
+		B08C91A71B91B0660086A881 /* base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -726,6 +739,7 @@
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				1AC3624916D4A1E8000847F2 /* AppController.mm in Sources */,
 				B08C91721B8CB4BA0086A881 /* SubscriptionViewController.cpp in Sources */,
+				B05100181B91DDAC00FBAAA3 /* HttpImageView.cpp in Sources */,
 				1AC3624B16D4A1E8000847F2 /* main.m in Sources */,
 				B047B92319E91CFA00F24BE6 /* DownloadManager.cpp in Sources */,
 				1AFCDA8216D4A25900906EA6 /* RootViewController.mm in Sources */,

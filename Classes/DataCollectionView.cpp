@@ -10,6 +10,8 @@
 #include "VideoPlayViewController.h"
 #include "TableViewHeaderView.h"
 #include "FirstCollectionHeaderView.h"
+#include "HttpImageView.h"
+
 #define PAGELINKTAG 1000
 
 DataCollectionView::DataCollectionView():m_pageViewIndex(0) {
@@ -65,7 +67,8 @@ void DataCollectionView::loadPageView() {
         std::string js_title = pageValue[i]["title"].asString();
         int js_id = pageValue[i]["id"].asInt();
         
-        CAImageView *image = CAImageView::createWithImage(CAImage::create(path));
+        HttpImageView *image = HttpImageView::createWithFrame(CADipRect(0,0,headerSize.width,headerSize.height));
+        image->setUrl(path);
         
         CALabel *title = CALabel::createWithFrame(CADipRect(20,headerSize.height / 1.25,headerSize.width,50));
         title->setText(js_title);
@@ -141,9 +144,10 @@ CACollectionViewCell* DataCollectionView::collectionCellAtIndex(CACollectionView
         
         CADipSize itemSize = view->getBounds().size;
         
-        CAImageView *imageView = CAImageView::create();
-        imageView->setFrame(CADipRect(0,0,itemSize.width,itemSize.height - 100));
+        HttpImageView *imageView = HttpImageView::createWithFrame(CADipRect(0,0,itemSize.width,itemSize.height - 100));
+        
         imageView->setTag(101);
+        //imageView->setImage(BaseImage::createUrl(data[index]["img"].asString()));
         view->addSubview(imageView);
         //生成itemCALabel
         CALabel* itemText = CALabel::createWithFrame(CADipRect(20, itemSize.height - 95, itemSize.width, 40));
@@ -166,8 +170,8 @@ CACollectionViewCell* DataCollectionView::collectionCellAtIndex(CACollectionView
     CAView* itemImageView = p_Cell->getSubviewByTag(99);
     itemImageView->setColor(CAColor_white);
     
-    CAImageView *imageView = (CAImageView*)p_Cell->getSubviewByTag(99)->getSubviewByTag(101);
-    imageView->setImage(CAImage::create(data[index]["img"].asString()));
+    HttpImageView *imageView = (HttpImageView*)p_Cell->getSubviewByTag(99)->getSubviewByTag(101);
+    imageView->setUrl(data[index]["img"].asString());
     
     //设置itme文本显示
     CALabel* itemText = (CALabel*)p_Cell->getSubviewByTag(99)->getSubviewByTag(100);

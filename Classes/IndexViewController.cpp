@@ -33,8 +33,6 @@ void IndexViewController::viewDidLoad() {
     this->loadNavigationItem();
     
     this->loadPageView();
-    
-    this->loadCollectionView();
 }
 
 void IndexViewController::viewDidUnload() {
@@ -48,6 +46,7 @@ void IndexViewController::parseJson() {
     CSJson::Reader reader;
     if (reader.parse(jsonData->getCString(), value)) {
         //OK
+        this->loadCollectionView();
     } else {
         //初始化失败。
     }
@@ -147,6 +146,7 @@ void IndexViewController::onButtonMore(CAControl *btn, CCPoint point) {
 
 void IndexViewController::onButtonCache(CAControl *btn, CCPoint point) {
     CCLog("缓存触发");
+    btn->getSuperview();
 }
 
 

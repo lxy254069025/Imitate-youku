@@ -22,11 +22,13 @@ public:
     
     bool init(const CADipRect& _ret);
     
+    void onTopHeaderClick(CAControl *btn,CCPoint point);
+    
 private:
     CADipSize winSize;
     
 private:
-    void onTopHeaderClick(CAControl *btn,CCPoint point);
+    
 };
 
 #endif /* defined(__youku__FirstCollectionHeaderView__) */

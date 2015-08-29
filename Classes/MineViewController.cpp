@@ -17,10 +17,18 @@ MineViewController::~MineViewController() {
 }
 
 void MineViewController::viewDidLoad() {
+    //CADevice::openCamera(this);
+    this->getView()->setDisplayRange(true);
     
 }
 
 
 void MineViewController::viewDidUnload() {
     
+}
+
+void MineViewController::getSelectedImage(CAImage *image) {
+    CAImageView *imgView = CAImageView::createWithFrame(this->getView()->getBounds());
+    imgView->setImage(image);
+    this->getView()->addSubview(imgView);
 }

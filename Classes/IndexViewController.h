@@ -18,20 +18,6 @@ public:
     
     virtual ~IndexViewController();
     
-protected:
-    void viewDidLoad();
-    
-    void viewDidUnload();
-    
-    
-private:
-    void parseJson();
-    
-    void loadNavigationItem();
-    
-    void loadPageView();
-    
-    void loadCollectionView();
     //搜索
     void onButtonSearch(CAControl *btn, CCPoint point);
     //会员中心
@@ -46,6 +32,22 @@ private:
     void onButtonCache(CAControl *btn, CCPoint point);
     
     void onRefresing(float t);
+    
+protected:
+    void viewDidLoad();
+    
+    void viewDidUnload();
+    
+    
+private:
+    void parseJson();
+    
+    void loadNavigationItem();
+    
+    void loadPageView();
+    
+    void loadCollectionView();
+    
 private:
     CADipSize winSize;
     

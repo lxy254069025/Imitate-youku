@@ -11,7 +11,7 @@
 
 #include "RootWindow.h"
 
-class MineViewController : public CAViewController {
+class MineViewController : public CAViewController,CAMediaDelegate {
     
 public:
     MineViewController();
@@ -20,6 +20,7 @@ public:
     
     CREATE_FUNC(MineViewController);
     
+    virtual void getSelectedImage(CAImage *image);
 protected:
     void viewDidLoad();
     

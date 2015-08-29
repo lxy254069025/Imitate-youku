@@ -62,15 +62,15 @@ public:
     
     virtual void pageViewDidSelectedPageAtIndex(CAPageView* pageView, unsigned int index, const CCPoint& point);
     
-private:
-    
-    void loadPageView();
-    
     void changePageViewIndex(float t);
     
     void pageClick(CAControl *btn,CCPoint point);
     
     void onRefresing(float t);
+    
+private:
+    
+    void loadPageView();
     
 private:
     CADipSize winSize;
