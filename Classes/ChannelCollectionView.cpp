@@ -64,7 +64,7 @@ void ChannelCollectionView::loadCollectionView() {
     m_collection->setAllowsMultipleSelection(false);
     m_collection->setAlwaysTopSectionHeader(false);
     this->addSubview(m_collection);
-}
+} 
 
 //Necessary
 CACollectionViewCell* ChannelCollectionView::collectionCellAtIndex(CACollectionView *collectionView, const CCSize& cellSize, unsigned int section, unsigned int row, unsigned int item) {
