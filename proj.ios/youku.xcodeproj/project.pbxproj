@@ -44,6 +44,7 @@
 		B04C0C0A1901207A009854FD /* json_writer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B04C0BFE1901207A009854FD /* json_writer.cpp */; };
 		B04C0C0B1901207A009854FD /* sconscript in Resources */ = {isa = PBXBuildFile; fileRef = B04C0C001901207A009854FD /* sconscript */; };
 		B05100181B91DDAC00FBAAA3 /* HttpImageView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B05100161B91DDAC00FBAAA3 /* HttpImageView.cpp */; };
+		B057E0201B939BDA00CABD39 /* ChannelCollectionView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B057E01E1B939BDA00CABD39 /* ChannelCollectionView.cpp */; };
 		B0621BE51AC3B871005EBCA7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = B0621BDB1AC3B871005EBCA7 /* fonts */; };
 		B0621E221AC3ECB0005EBCA7 /* RootWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0621E1F1AC3ECB0005EBCA7 /* RootWindow.cpp */; };
 		B0621E261AC3ECEC005EBCA7 /* r in Resources */ = {isa = PBXBuildFile; fileRef = B0621E251AC3ECEC005EBCA7 /* r */; };
@@ -174,6 +175,8 @@
 		B05100161B91DDAC00FBAAA3 /* HttpImageView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HttpImageView.cpp; path = ../Classes/HttpImageView.cpp; sourceTree = "<group>"; };
 		B05100171B91DDAC00FBAAA3 /* HttpImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HttpImageView.h; path = ../Classes/HttpImageView.h; sourceTree = "<group>"; };
 		B056375B195276CF00C63FAA /* CrossApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CrossApp.xcodeproj; path = ../../../CrossApp/proj.ios/CrossApp.xcodeproj; sourceTree = "<group>"; };
+		B057E01E1B939BDA00CABD39 /* ChannelCollectionView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChannelCollectionView.cpp; path = ../Classes/ChannelCollectionView.cpp; sourceTree = "<group>"; };
+		B057E01F1B939BDA00CABD39 /* ChannelCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelCollectionView.h; path = ../Classes/ChannelCollectionView.h; sourceTree = "<group>"; };
 		B0621BDB1AC3B871005EBCA7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		B0621E1F1AC3ECB0005EBCA7 /* RootWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = RootWindow.cpp; path = ../Classes/RootWindow.cpp; sourceTree = "<group>"; };
 		B0621E201AC3ECB0005EBCA7 /* RootWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootWindow.h; path = ../Classes/RootWindow.h; sourceTree = "<group>"; };
@@ -608,6 +611,8 @@
 				B08C91A51B90D9F30086A881 /* FirstCollectionHeaderView.h */,
 				B05100161B91DDAC00FBAAA3 /* HttpImageView.cpp */,
 				B05100171B91DDAC00FBAAA3 /* HttpImageView.h */,
+				B057E01E1B939BDA00CABD39 /* ChannelCollectionView.cpp */,
+				B057E01F1B939BDA00CABD39 /* ChannelCollectionView.h */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -728,6 +733,7 @@
 				15A3DAEC1682F8A6002FB0C5 /* CDOpenALSupport.m in Sources */,
 				B04822BC19FA41F70019F1A7 /* CAAddress.mm in Sources */,
 				15A3DAED1682F8A6002FB0C5 /* CocosDenshion.m in Sources */,
+				B057E0201B939BDA00CABD39 /* ChannelCollectionView.cpp in Sources */,
 				B08C91751B8CB5560086A881 /* MineViewController.cpp in Sources */,
 				B04822C119FA41F70019F1A7 /* CALocation.mm in Sources */,
 				15A3DAEE1682F8A6002FB0C5 /* SimpleAudioEngine.mm in Sources */,
@@ -794,12 +800,16 @@
 					"\"$(SRCROOT)/../../../CrossApp/the_third_party/freetype/include/ios\"",
 					"\"$(SRCROOT)/../../../CrossApp/the_third_party/curl/include/ios\"",
 					"\"$(SRCROOT)/../../../extensions/libwebsockets/ios/include\"",
+					"\"$(SRCROOT)/../../../CrossApp/the_third_party/FFmpeg/include/ios\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../extensions/libwebsockets/ios/lib\"",
 					"\"$(SRCROOT)/../../../CrossApp/the_third_party/curl/prebuilt/ios\"",
+					"$(PROJECT_DIR)",
+					/Users/luxixi/Documents/app/CrossApp/projects/youku/classes/ffmpeg/lib,
+					"\"$(SRCROOT)/../../../extensions/libwebsockets/ios/include\"",
 				);
 				OTHER_CFLAGS = "-O2";
 				PRODUCT_NAME = youku;
@@ -843,12 +853,16 @@
 					"\"$(SRCROOT)/../../../CrossApp/the_third_party/freetype/include/ios\"",
 					"\"$(SRCROOT)/../../../CrossApp/the_third_party/curl/include/ios\"",
 					"\"$(SRCROOT)/../../../extensions/libwebsockets/ios/include\"",
+					"\"$(SRCROOT)/../../../CrossApp/the_third_party/FFmpeg/include/ios\"",
 				);
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(SRCROOT)/../../../extensions/libwebsockets/ios/lib\"",
 					"\"$(SRCROOT)/../../../CrossApp/the_third_party/curl/prebuilt/ios\"",
+					"$(PROJECT_DIR)",
+					/Users/luxixi/Documents/app/CrossApp/projects/youku/classes/ffmpeg/lib,
+					"\"$(SRCROOT)/../../../extensions/libwebsockets/ios/include\"",
 				);
 				PRODUCT_NAME = youku;
 				PROVISIONING_PROFILE = "";

@@ -11,6 +11,7 @@
 #include "TableViewHeaderView.h"
 #include "FirstCollectionHeaderView.h"
 #include "HttpImageView.h"
+//#include "WebSocket.h"
 
 #define PAGELINKTAG 1000
 
@@ -320,12 +321,10 @@ void DataCollectionView::collectionViewDidSelectCellAtIndexPath(CACollectionView
     int index = row * 2 + item;
     CSJson::Value data = m_value["data"];
     CSJson::Value currData = data[section]["list"];
-    
     int v_id = currData[index]["id"].asInt();
-    CCLog("v_id %d",v_id);
     RootWindow::create()->getNavigationController()->pushViewController(VideoPlayViewController::create(v_id), true);
+    //RootWindow::create()->getNavigationController()->pushViewController(CAVideoPlayerController::createWithPath("r/data.mp4", "asdf"), true);
 }
 
 void DataCollectionView::collectionViewDidDeselectCellAtIndexPath(CACollectionView *collectionView, unsigned int section, unsigned int row, unsigned int item) {
-    CCLog("asdf");
 }

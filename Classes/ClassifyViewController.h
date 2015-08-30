@@ -26,6 +26,9 @@ protected:
     void viewDidUnload();
     
 private:
+    void loadNavigationItem();
+    
+private:
     CADipSize winSize;
 };
 

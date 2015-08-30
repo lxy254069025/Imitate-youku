@@ -33,7 +33,7 @@ void SubscriptionViewController::viewDidUnload() {
 
 void SubscriptionViewController::loadNavigationItem() {
     CAView *view = CAView::createWithFrame(CADipRect(0,0,winSize.width,130));
-    view->setColor(CAColor_white);
+    view->setColor(ccc4(248, 248, 248, 255));
     this->getView()->addSubview(view);
     
     CADipSize viewSize = view->getBounds().size;
@@ -45,6 +45,7 @@ void SubscriptionViewController::loadNavigationItem() {
     title->setVerticalTextAlignmet(CAVerticalTextAlignmentCenter);
     title->setColor(CAColor_black);
     view->addSubview(title);
+    
 }
 
 void SubscriptionViewController::loadWeb() {

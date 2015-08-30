@@ -7,9 +7,10 @@
 //
 
 #include "VideoPlayViewController.h"
+//#include "ffmpeg.h"
 
 VideoPlayViewController::VideoPlayViewController() {
-    
+    this->getView()->setDisplayRange(false);
 }
 
 
@@ -32,6 +33,9 @@ VideoPlayViewController* VideoPlayViewController::create(int video_id) {
 void VideoPlayViewController::viewDidLoad() {
     winSize = this->getView()->getBounds().size;
     CCLog("视频视图片中");
+    //av_register_all();
+    //CCLog("%s",avcodec_configuration());
+    //CAApplication::getApplication()->set
 }
 
 void VideoPlayViewController::viewDidUnload() {

@@ -7,7 +7,7 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>85D6A229-1E35-43AD-B78F-A7DC0BADBFB2</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>youku</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>630594A0C3AF0041EB86DE5D805A5B25A32E1B5D</key>
@@ -16,11 +16,11 @@
 		<string>https://github.com/lxy254069025/Imitate-youku.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>proj.ios/youku.xcodeproj/project.xcworkspace</string>
+	<string>proj.ios/youku.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>630594A0C3AF0041EB86DE5D805A5B25A32E1B5D</key>
-		<string>../../../../..</string>
+		<string>../../../..</string>
 		<key>E8F194DE07E993D933F18F9BFB615B0DEBC4247D</key>
 		<string>../../..</string>
 	</dict>
@@ -38,7 +38,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>630594A0C3AF0041EB86DE5D805A5B25A32E1B5D</string>
 			<key>IDESourceControlWCCName</key>
-			<string>..</string>
+			<string></string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

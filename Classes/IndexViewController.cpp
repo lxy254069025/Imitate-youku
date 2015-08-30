@@ -54,7 +54,7 @@ void IndexViewController::parseJson() {
 
 void IndexViewController::loadNavigationItem() {
     CAView *view = CAView::createWithFrame(CADipRect(0,0,winSize.width,130));
-    view->setColor(CAColor_white);
+    view->setColor(ccc4(248, 248, 248, 255));
     this->getView()->addSubview(view);
     
     CAImageView *logo = CAImageView::createWithFrame(CADipRect(30,60,76,50));

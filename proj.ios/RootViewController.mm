@@ -49,6 +49,7 @@
                                    multiSampling: NO
                                  numberOfSamples: 0];
     [__glView setMultipleTouchEnabled:YES];
+    [__glView setTag:100];
     [self.view addSubview:__glView];
 }
 
@@ -73,7 +74,17 @@
 
 - (BOOL) shouldAutorotate
 {
-    return NO;
+    return YES;
+}
+
+- (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
+    [super willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
+    NSLog(@"将要旋转了?");
+
+}
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+    NSLog(@"如果让我旋转,我已经旋转完了!");
 }
 
 //fix not hide status on ios7

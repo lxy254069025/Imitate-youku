@@ -32,7 +32,7 @@ void MemberViewController::viewDidUnload() {
 
 void MemberViewController::loadNavigationItem() {
     CAView *view = CAView::createWithFrame(CADipRect(0,0,winSize.width,130));
-    view->setColor(CAColor_white);
+    view->setColor(ccc4(248, 248, 248, 255));
     this->getView()->addSubview(view);
     
     CAView *btnView = CAView::createWithFrame(CCRect(0,0,(40),(30)), CAColor_clear);
