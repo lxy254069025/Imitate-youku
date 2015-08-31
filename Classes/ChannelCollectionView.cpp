@@ -64,7 +64,7 @@ void ChannelCollectionView::loadCollectionView() {
     m_collection->setAllowsMultipleSelection(false);
     m_collection->setAlwaysTopSectionHeader(false);
     this->addSubview(m_collection);
-} 
+}
 
 //Necessary
 CACollectionViewCell* ChannelCollectionView::collectionCellAtIndex(CACollectionView *collectionView, const CCSize& cellSize, unsigned int section, unsigned int row, unsigned int item) {
@@ -76,25 +76,27 @@ CACollectionViewCell* ChannelCollectionView::collectionCellAtIndex(CACollectionV
     CCLog("-- %d",index);
     if (cell == NULL) {
         cell = CACollectionViewCell::create("channel");
-        
-        CAImageView *imageView = CAImageView::createWithFrame(CADipRect(30,50,84,60));
+        CAView *view = CAView::createWithFrame(CADipRect(0,0,cellSize.width,cellSize.height),CAColor_white);
+        view->setTag(99);
+        CAImageView *imageView = CAImageView::createWithFrame(CADipRect(cellSize.width / 2 - 42,50,84,60));
         imageView->setImageViewScaleType(CAImageViewScaleTypeFitImageInside);
         imageView->setTag(100);
-        cell->addSubview(imageView);
-        CALabel *title = CALabel::createWithFrame(CADipRect(30,130,84,32));
+        view->addSubview(imageView);
+        CALabel *title = CALabel::createWithFrame(CADipRect(cellSize.width / 2 - 42,130,84,32));
         
         title->setFontSize(_px(28));
         title->setColor(ccc4(144, 144, 144, 255));
         title->setTextAlignment(CATextAlignmentCenter);
         title->setVerticalTextAlignmet(CAVerticalTextAlignmentCenter);
         title->setTag(101);
-        cell->addSubview(title);
+        view->addSubview(title);
+        cell->addSubview(view);
     }
-    
-    CAImageView *imageView = (CAImageView*)cell->getSubviewByTag(100);
+    cell->setColor(CAColor_white);
+    CAImageView *imageView = (CAImageView*)cell->getSubviewByTag(99)->getSubviewByTag(100);
     imageView->setImage(CAImage::create(currValue["img"].asString()));
     
-    CALabel *title = (CALabel*)cell->getSubviewByTag(101);
+    CALabel *title = (CALabel*)cell->getSubviewByTag(99)->getSubviewByTag(101);
     title->setText(currValue["title"].asString());
     return cell;
 }
@@ -154,7 +156,7 @@ unsigned int ChannelCollectionView::collectionViewHeightForHeaderInSection(CACol
 }
 
 void ChannelCollectionView::collectionViewDidSelectCellAtIndexPath(CACollectionView *collectionView, unsigned int section, unsigned int row, unsigned int item) {
-    
+    CCLog("选中");
 }
 
 void ChannelCollectionView::collectionViewDidDeselectCellAtIndexPath(CACollectionView *collectionView, unsigned int section, unsigned int row, unsigned int item) {
