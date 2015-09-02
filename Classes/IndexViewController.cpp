@@ -11,6 +11,7 @@
 #include "VideoPlayViewController.h"
 #include "TableViewHeaderView.h"
 #include "DataCollectionView.h"
+#include "SearchViewController.h"
 
 
 #define MORESELECTED 100000
@@ -112,6 +113,7 @@ void IndexViewController::loadCollectionView() {
 //搜索
 void IndexViewController::onButtonSearch(CAControl *btn, CCPoint point) {
     CCLog("搜索");
+    RootWindow::create()->getNavigationController()->pushViewController(SearchViewController::create(), false);
 }
 //会员中心
 void IndexViewController::onButtonMenber(CAControl *btn, CCPoint point) {

@@ -7,6 +7,7 @@
 //
 
 #include "ChannelCollectionView.h"
+#include "ChannelDetailedViewController.h"
 #include <math.h>
 
 ChannelCollectionView::ChannelCollectionView() {
@@ -156,7 +157,13 @@ unsigned int ChannelCollectionView::collectionViewHeightForHeaderInSection(CACol
 }
 
 void ChannelCollectionView::collectionViewDidSelectCellAtIndexPath(CACollectionView *collectionView, unsigned int section, unsigned int row, unsigned int item) {
-    CCLog("选中");
+    
+    char classify[10];
+    int index = row * 4 + item;
+    sprintf(classify, "classify%d",section + 1);
+    CSJson::Value currValue = m_value[classify][index];
+    int c_id = currValue["id"].asInt();
+    RootWindow::create()->getNavigationController()->pushViewController(ChannelDetailedViewController::create(c_id,0), true);
 }
 
 void ChannelCollectionView::collectionViewDidDeselectCellAtIndexPath(CACollectionView *collectionView, unsigned int section, unsigned int row, unsigned int item) {

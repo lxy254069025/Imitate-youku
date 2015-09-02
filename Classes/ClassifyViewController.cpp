@@ -20,9 +20,11 @@ ClassifyViewController::~ClassifyViewController() {
 
 void ClassifyViewController::viewDidLoad() {
     winSize = this->getView()->getBounds().size;
+    this->getView()->setColor(CAColor_white);
     this->loadNavigationItem();
     
     ChannelCollectionView *channel = ChannelCollectionView::createWithFrame(CADipRect(0,130,winSize.width,winSize.height-130));
+    
     this->getView()->addSubview(channel);
 }
 
@@ -30,6 +32,7 @@ void ClassifyViewController::viewDidLoad() {
 void ClassifyViewController::viewDidUnload() {
     
 }
+
 
 void ClassifyViewController::loadNavigationItem() {
     CAView *view = CAView::createWithFrame(CADipRect(0,0,winSize.width,130));

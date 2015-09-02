@@ -8,7 +8,7 @@
 
 #include "SubscriptionViewController.h"
 
-SubscriptionViewController::SubscriptionViewController() {
+SubscriptionViewController::SubscriptionViewController():m_web(NULL) {
     
 }
 
@@ -25,6 +25,18 @@ void SubscriptionViewController::viewDidLoad() {
     this->loadNavigationItem();
     
     this->loadWeb();
+}
+
+void SubscriptionViewController::viewDidAppear() {
+    CCLog("jingle");
+    if (m_web != NULL) {
+        m_web->setVisible(true);
+    }
+}
+
+void SubscriptionViewController::viewDidDisappear() {
+    CCLog("tuichu");
+    m_web->setVisible(false);
 }
 
 void SubscriptionViewController::viewDidUnload() {
@@ -50,8 +62,8 @@ void SubscriptionViewController::loadNavigationItem() {
 
 void SubscriptionViewController::loadWeb() {
     
-    CAWebView *web = CAWebView::createWithFrame(CADipRect(0,130.5,winSize.width,winSize.height-130));
-    web->loadURL("http://i.youku.com/u/subscribeUpdate");
-    this->getView()->addSubview(web);
+    m_web = CAWebView::createWithFrame(CADipRect(0,130.5,winSize.width,winSize.height-130));
+    m_web->loadURL("http://i.youku.com/u/subscribeUpdate");
+    this->getView()->addSubview(m_web);
 }
 

@@ -26,12 +26,18 @@ protected:
     
     void viewDidUnload();
     
+    void viewDidAppear();
+    
+    void viewDidDisappear();
+    
     void loadNavigationItem();
     
     void loadWeb();
     
 private:
     CADipSize winSize;
+    
+    CAWebView *m_web;
 };
 
 #endif /* defined(__youku__SubscriptionViewController__) */

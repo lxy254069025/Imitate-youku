@@ -59,6 +59,9 @@
 		B08C91A01B9051ED0086A881 /* IndexViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08C919E1B9051ED0086A881 /* IndexViewController.cpp */; };
 		B08C91A31B9057540086A881 /* DataCollectionView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08C91A11B9057540086A881 /* DataCollectionView.cpp */; };
 		B08C91A61B90D9F30086A881 /* FirstCollectionHeaderView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B08C91A41B90D9F30086A881 /* FirstCollectionHeaderView.cpp */; };
+		B09870B71B958CAD002EBA9F /* ChannelDetailedViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09870B51B958CAD002EBA9F /* ChannelDetailedViewController.cpp */; };
+		B09870BA1B95DFA7002EBA9F /* ChannelDropDownView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09870B81B95DFA7002EBA9F /* ChannelDropDownView.cpp */; };
+		B09870BE1B960708002EBA9F /* SearchViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09870BC1B960708002EBA9F /* SearchViewController.cpp */; };
 		B0A030061A8E07050005CB8F /* CABlueTooth.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0A030051A8E07050005CB8F /* CABlueTooth.mm */; };
 		B0A030081A8E071D0005CB8F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A030071A8E071D0005CB8F /* CoreBluetooth.framework */; };
 		B0CA5A291A77A77B00BECD89 /* CAStudioViewParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0CA5A271A77A77B00BECD89 /* CAStudioViewParser.cpp */; };
@@ -203,6 +206,12 @@
 		B08C91A21B9057540086A881 /* DataCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataCollectionView.h; path = ../Classes/DataCollectionView.h; sourceTree = "<group>"; };
 		B08C91A41B90D9F30086A881 /* FirstCollectionHeaderView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FirstCollectionHeaderView.cpp; path = ../Classes/FirstCollectionHeaderView.cpp; sourceTree = "<group>"; };
 		B08C91A51B90D9F30086A881 /* FirstCollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstCollectionHeaderView.h; path = ../Classes/FirstCollectionHeaderView.h; sourceTree = "<group>"; };
+		B09870B51B958CAD002EBA9F /* ChannelDetailedViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChannelDetailedViewController.cpp; path = ../Classes/ChannelDetailedViewController.cpp; sourceTree = "<group>"; };
+		B09870B61B958CAD002EBA9F /* ChannelDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelDetailedViewController.h; path = ../Classes/ChannelDetailedViewController.h; sourceTree = "<group>"; };
+		B09870B81B95DFA7002EBA9F /* ChannelDropDownView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChannelDropDownView.cpp; path = ../Classes/ChannelDropDownView.cpp; sourceTree = "<group>"; };
+		B09870B91B95DFA7002EBA9F /* ChannelDropDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelDropDownView.h; path = ../Classes/ChannelDropDownView.h; sourceTree = "<group>"; };
+		B09870BC1B960708002EBA9F /* SearchViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SearchViewController.cpp; path = ../Classes/SearchViewController.cpp; sourceTree = "<group>"; };
+		B09870BD1B960708002EBA9F /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewController.h; path = ../Classes/SearchViewController.h; sourceTree = "<group>"; };
 		B0A030041A8E07050005CB8F /* CABlueTooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABlueTooth.h; sourceTree = "<group>"; };
 		B0A030051A8E07050005CB8F /* CABlueTooth.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CABlueTooth.mm; sourceTree = "<group>"; };
 		B0A030071A8E071D0005CB8F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -372,6 +381,10 @@
 				B08C918C1B8D04F60086A881 /* VideoPlayViewController.h */,
 				B08C919E1B9051ED0086A881 /* IndexViewController.cpp */,
 				B08C919F1B9051ED0086A881 /* IndexViewController.h */,
+				B09870B51B958CAD002EBA9F /* ChannelDetailedViewController.cpp */,
+				B09870B61B958CAD002EBA9F /* ChannelDetailedViewController.h */,
+				B09870BC1B960708002EBA9F /* SearchViewController.cpp */,
+				B09870BD1B960708002EBA9F /* SearchViewController.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -613,6 +626,8 @@
 				B05100171B91DDAC00FBAAA3 /* HttpImageView.h */,
 				B057E01E1B939BDA00CABD39 /* ChannelCollectionView.cpp */,
 				B057E01F1B939BDA00CABD39 /* ChannelCollectionView.h */,
+				B09870B81B95DFA7002EBA9F /* ChannelDropDownView.cpp */,
+				B09870B91B95DFA7002EBA9F /* ChannelDropDownView.h */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -727,11 +742,13 @@
 				B04822BD19FA41F70019F1A7 /* CAAlbumController.mm in Sources */,
 				15A3DAEB1682F8A6002FB0C5 /* CDAudioManager.m in Sources */,
 				B08C91931B8D5FDC0086A881 /* TableViewHeaderView.cpp in Sources */,
+				B09870BE1B960708002EBA9F /* SearchViewController.cpp in Sources */,
 				B08C918D1B8D04F60086A881 /* VideoPlayViewController.cpp in Sources */,
 				B08C91621B8BC2B50086A881 /* CacheView.cpp in Sources */,
 				B0A030061A8E07050005CB8F /* CABlueTooth.mm in Sources */,
 				15A3DAEC1682F8A6002FB0C5 /* CDOpenALSupport.m in Sources */,
 				B04822BC19FA41F70019F1A7 /* CAAddress.mm in Sources */,
+				B09870BA1B95DFA7002EBA9F /* ChannelDropDownView.cpp in Sources */,
 				15A3DAED1682F8A6002FB0C5 /* CocosDenshion.m in Sources */,
 				B057E0201B939BDA00CABD39 /* ChannelCollectionView.cpp in Sources */,
 				B08C91751B8CB5560086A881 /* MineViewController.cpp in Sources */,
@@ -747,6 +764,7 @@
 				B08C91721B8CB4BA0086A881 /* SubscriptionViewController.cpp in Sources */,
 				B05100181B91DDAC00FBAAA3 /* HttpImageView.cpp in Sources */,
 				1AC3624B16D4A1E8000847F2 /* main.m in Sources */,
+				B09870B71B958CAD002EBA9F /* ChannelDetailedViewController.cpp in Sources */,
 				B047B92319E91CFA00F24BE6 /* DownloadManager.cpp in Sources */,
 				1AFCDA8216D4A25900906EA6 /* RootViewController.mm in Sources */,
 				B0621E221AC3ECB0005EBCA7 /* RootWindow.cpp in Sources */,

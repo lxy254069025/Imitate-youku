@@ -10,7 +10,6 @@
 
 
 MineTableViewCell::MineTableViewCell() {
-    
 }
 
 MineTableViewCell::~MineTableViewCell() {
@@ -93,6 +92,8 @@ void MineViewController::viewDidLoad() {
     this->loadHeader();
     
     this->loadTableView();
+    
+    
 }
 
 
