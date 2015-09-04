@@ -168,7 +168,7 @@ void ChannelDetailedViewController::onDropDwon(CAControl *btn,CCPoint point) {
 }
 
 void ChannelDetailedViewController::setDorDwonAttr(std::string title,int channel_id) {
-    CCLog("%s-,,,,-%d",title.c_str(),channel_id);
+    
     CALabel *currTitle = (CALabel*)m_dropDownView->getSubviewByTag(100);
     
     CAView *view = (CAView*)this->getView()->getSubviewByTag(99);
@@ -178,7 +178,7 @@ void ChannelDetailedViewController::setDorDwonAttr(std::string title,int channel
     CAViewAnimation::commitAnimations();
     
     long titleLen = StringUtils::getCharacterCountInUTF8String(title);
-    CCLog("%d",titleLen);
+    
     CADipSize viewSize = view->getBounds().size;
     
     m_dropDownBtn->setCenter(CADipRect(viewSize.width / 2,(viewSize.height + 40) / 2,38*(titleLen+1),50));
@@ -189,8 +189,15 @@ void ChannelDetailedViewController::setDorDwonAttr(std::string title,int channel
     
     CAImageView *drop = (CAImageView*)m_dropDownView->getSubviewByTag(101);
     drop->setFrame(CADipRect(btnSize.width - 38,0,38,btnSize.height));
+    if (drop->getRotation() == 0) {
+        drop->setRotation(180);
+    } else {
+        drop->setRotation(0);
+    }
     
     currTitle->setFrame(CADipRect(0,0,btnSize.width - 38,btnSize.height));
     currTitle->setText(title);
+    
+    
 }
 
