@@ -11,9 +11,6 @@
 
 #include <string>
 #include <vector>
-#include "CrossApp.h"
-#include "CrossAppExt.h"
-USING_NS_CC;
-USING_NS_CC_EXT;
+
 
 #endif

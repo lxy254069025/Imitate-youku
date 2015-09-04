@@ -50,7 +50,7 @@ void ChannelDetailedViewController::viewDidLoad() {
     
     this->loadNavigationIemt();
     
-    this->getView()->setColor(CAColor_white);
+    this->getView()->setColor(CAColor_black);
     
 }
 
@@ -66,6 +66,7 @@ void ChannelDetailedViewController::parseJson() {
     if (reader.parse(jsonData->getCString(), m_channel_value)) {
         //OK
         //this->loadCollectionView();
+        m_channelSize = m_channel_value["classify1"].size() + m_channel_value["classify2"].size();
     } else {
         //初始化失败。
     }
@@ -75,6 +76,7 @@ void ChannelDetailedViewController::loadNavigationIemt() {
     CAView *view = CAView::createWithFrame(CADipRect(0,0,winSize.width,130));
     view->setColor(ccc4(248, 248, 248, 255));
     view->setZOrder(100);
+    view->setTag(99);
     this->getView()->addSubview(view);
     
     CADipSize viewSize = view->getBounds().size;
@@ -127,6 +129,7 @@ void ChannelDetailedViewController::onFanHui(CAControl *btn, CCPoint point) {
 
 
 void ChannelDetailedViewController::onDropDwon(CAControl *btn,CCPoint point) {
+    
     CAImageView *drop =  (CAImageView*)m_dropDownView->getSubviewByTag(101);
     if (drop->getRotation() == 0) {
         drop->setRotation(180);
@@ -137,12 +140,12 @@ void ChannelDetailedViewController::onDropDwon(CAControl *btn,CCPoint point) {
     if (m_cDropDownView != NULL) {
         if (m_cDropDownView->getFrameOrigin().y >= 130) {
             CAViewAnimation::beginAnimations("111", NULL);
-            m_cDropDownView->setFrame(CADipRect(0,-500 + - 130,winSize.width,500));
+            m_cDropDownView->setFrame(CADipRect(0,-winSize.height + - 130,winSize.width,winSize.height));
             CAViewAnimation::commitAnimations();
             return;
         } else {
             CAViewAnimation::beginAnimations("111", NULL);
-            m_cDropDownView->setFrame(CADipRect(0,130,winSize.width,500));
+            m_cDropDownView->setFrame(CADipRect(0,130,winSize.width,winSize.height));
             CAViewAnimation::commitAnimations();
             return;
         }
@@ -150,11 +153,44 @@ void ChannelDetailedViewController::onDropDwon(CAControl *btn,CCPoint point) {
     }
     
     
-    m_cDropDownView = ChannelDropDownView::createWithFrame(CADipRect(0,-500 + - 130,winSize.width,500));
+    m_cDropDownView = ChannelDropDownView::createWithFrame(CADipRect(0,-winSize.height + - 130,winSize.width,winSize.height));
+    m_cDropDownView->setDataSize(m_channelSize);
+    m_cDropDownView->initCollectionView();
     m_cDropDownView->setZOrder(99);
+    m_cDropDownView->setDefaultChannel(0);
+    m_cDropDownView->setValue(m_channel_value);
+    m_cDropDownView->setCallBack(this,CAView_selector(ChannelDetailedViewController::setDorDwonAttr));
+    
     this->getView()->addSubview(m_cDropDownView);
     CAViewAnimation::beginAnimations("111", NULL);
-    m_cDropDownView->setFrame(CADipRect(0,130,winSize.width,500));
+    m_cDropDownView->setFrame(CADipRect(0,130,winSize.width,winSize.height));
     CAViewAnimation::commitAnimations();
+}
+
+void ChannelDetailedViewController::setDorDwonAttr(std::string title,int channel_id) {
+    CCLog("%s-,,,,-%d",title.c_str(),channel_id);
+    CALabel *currTitle = (CALabel*)m_dropDownView->getSubviewByTag(100);
+    
+    CAView *view = (CAView*)this->getView()->getSubviewByTag(99);
+    
+    CAViewAnimation::beginAnimations("111", NULL);
+    m_cDropDownView->setFrame(CADipRect(0,-winSize.height + - 130,winSize.width,winSize.height));
+    CAViewAnimation::commitAnimations();
+    
+    long titleLen = StringUtils::getCharacterCountInUTF8String(title);
+    CCLog("%d",titleLen);
+    CADipSize viewSize = view->getBounds().size;
+    
+    m_dropDownBtn->setCenter(CADipRect(viewSize.width / 2,(viewSize.height + 40) / 2,38*(titleLen+1),50));
+    CADipSize btnSize = m_dropDownBtn->getBounds().size;
+    
+    
+    m_dropDownView->setFrame(CADipRect(0,0,btnSize.width,btnSize.height));
+    
+    CAImageView *drop = (CAImageView*)m_dropDownView->getSubviewByTag(101);
+    drop->setFrame(CADipRect(btnSize.width - 38,0,38,btnSize.height));
+    
+    currTitle->setFrame(CADipRect(0,0,btnSize.width - 38,btnSize.height));
+    currTitle->setText(title);
 }
 

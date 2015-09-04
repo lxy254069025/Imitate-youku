@@ -3,8 +3,13 @@
 #ifndef __HelloCpp__RootWindow__
 #define __HelloCpp__RootWindow__
 
-#include "HomeData.h"
+#include "CrossApp.h"
+#include "CrossAppExt.h"
+USING_NS_CC;
+USING_NS_CC_EXT;
 
+typedef void (CAObject::*Channel_Control)(std::string, int);
+#define CAView_selector(_SELECTOR) (Channel_Control)(&_SELECTOR)
 
 class RootWindow: public CAWindow
 {

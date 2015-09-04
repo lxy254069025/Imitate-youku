@@ -29,6 +29,9 @@ public:
     void onFanHui(CAControl *btn, CCPoint point);
     
     void onDropDwon(CAControl *btn,CCPoint point);
+    
+    void setDorDwonAttr(std::string title,int channel_id);
+    
 private:
     void loadNavigationIemt();
     
@@ -47,6 +50,8 @@ private:
     CAButton* m_dropDownBtn;
     
     ChannelDropDownView* m_cDropDownView;
+    
+    int m_channelSize;
 };
 
 #endif /* defined(__youku__ChannelDetailedViewController__) */
