@@ -62,6 +62,8 @@
 		B09870B71B958CAD002EBA9F /* ChannelDetailedViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09870B51B958CAD002EBA9F /* ChannelDetailedViewController.cpp */; };
 		B09870BA1B95DFA7002EBA9F /* ChannelDropDownView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09870B81B95DFA7002EBA9F /* ChannelDropDownView.cpp */; };
 		B09870BE1B960708002EBA9F /* SearchViewController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09870BC1B960708002EBA9F /* SearchViewController.cpp */; };
+		B09870C51B9B2C98002EBA9F /* ChannelListVideo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09870C31B9B2C98002EBA9F /* ChannelListVideo.cpp */; };
+		B09870C91B9B4E43002EBA9F /* ChannelListVideoCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B09870C71B9B4E43002EBA9F /* ChannelListVideoCell.cpp */; };
 		B0A030061A8E07050005CB8F /* CABlueTooth.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0A030051A8E07050005CB8F /* CABlueTooth.mm */; };
 		B0A030081A8E071D0005CB8F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A030071A8E071D0005CB8F /* CoreBluetooth.framework */; };
 		B0CA5A291A77A77B00BECD89 /* CAStudioViewParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0CA5A271A77A77B00BECD89 /* CAStudioViewParser.cpp */; };
@@ -212,6 +214,10 @@
 		B09870B91B95DFA7002EBA9F /* ChannelDropDownView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelDropDownView.h; path = ../Classes/ChannelDropDownView.h; sourceTree = "<group>"; };
 		B09870BC1B960708002EBA9F /* SearchViewController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SearchViewController.cpp; path = ../Classes/SearchViewController.cpp; sourceTree = "<group>"; };
 		B09870BD1B960708002EBA9F /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchViewController.h; path = ../Classes/SearchViewController.h; sourceTree = "<group>"; };
+		B09870C31B9B2C98002EBA9F /* ChannelListVideo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChannelListVideo.cpp; path = ../Classes/ChannelListVideo.cpp; sourceTree = "<group>"; };
+		B09870C41B9B2C98002EBA9F /* ChannelListVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelListVideo.h; path = ../Classes/ChannelListVideo.h; sourceTree = "<group>"; };
+		B09870C71B9B4E43002EBA9F /* ChannelListVideoCell.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ChannelListVideoCell.cpp; path = ../Classes/ChannelListVideoCell.cpp; sourceTree = "<group>"; };
+		B09870C81B9B4E43002EBA9F /* ChannelListVideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChannelListVideoCell.h; path = ../Classes/ChannelListVideoCell.h; sourceTree = "<group>"; };
 		B0A030041A8E07050005CB8F /* CABlueTooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CABlueTooth.h; sourceTree = "<group>"; };
 		B0A030051A8E07050005CB8F /* CABlueTooth.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CABlueTooth.mm; sourceTree = "<group>"; };
 		B0A030071A8E071D0005CB8F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -628,6 +634,10 @@
 				B057E01F1B939BDA00CABD39 /* ChannelCollectionView.h */,
 				B09870B81B95DFA7002EBA9F /* ChannelDropDownView.cpp */,
 				B09870B91B95DFA7002EBA9F /* ChannelDropDownView.h */,
+				B09870C31B9B2C98002EBA9F /* ChannelListVideo.cpp */,
+				B09870C41B9B2C98002EBA9F /* ChannelListVideo.h */,
+				B09870C71B9B4E43002EBA9F /* ChannelListVideoCell.cpp */,
+				B09870C81B9B4E43002EBA9F /* ChannelListVideoCell.h */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -759,7 +769,9 @@
 				B0CA5A291A77A77B00BECD89 /* CAStudioViewParser.cpp in Sources */,
 				15A3DAEF1682F8A6002FB0C5 /* SimpleAudioEngine_objc.m in Sources */,
 				B08C91A61B90D9F30086A881 /* FirstCollectionHeaderView.cpp in Sources */,
+				B09870C51B9B2C98002EBA9F /* ChannelListVideo.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
+				B09870C91B9B4E43002EBA9F /* ChannelListVideoCell.cpp in Sources */,
 				1AC3624916D4A1E8000847F2 /* AppController.mm in Sources */,
 				B08C91721B8CB4BA0086A881 /* SubscriptionViewController.cpp in Sources */,
 				B05100181B91DDAC00FBAAA3 /* HttpImageView.cpp in Sources */,

@@ -72,11 +72,11 @@ void ChannelDropDownViewCell::disabledTableViewCell() {
 void ChannelDropDownViewCell::setModel(CSJson::Value value,int default_id) {
     m_title->setText(value["title"].asString());
     
-    if (default_id == 0 && value["title"].asString() == "全部") {
-        m_title->setColor(CAColor_green);
-    } else if (value["id"].asInt() == default_id) {
-        m_title->setColor(CAColor_green);
-    }
+//    if (default_id == 0 && value["title"].asString() == "全部") {
+//        m_title->setColor(CAColor_green);
+//    } else if (value["id"].asInt() == default_id) {
+//        m_title->setColor(CAColor_green);
+//    }
 }
 
 

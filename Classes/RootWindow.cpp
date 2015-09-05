@@ -64,6 +64,7 @@ bool RootWindow::init()
     mine->setTabBarItem(CATabBarItem::create(UTF8("我的"), CAImage::create("r/navbar_icon_user_normal.png"),CAImage::create("r/navbar_icon_user_selected.png")));
     vec.pushBack(mine);
     
+    
     CATabBarController *tabBar = new CATabBarController();
     tabBar->initWithViewControllers(vec);
     tabBar->autorelease();

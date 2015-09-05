@@ -7,6 +7,7 @@
 //
 
 #include "ChannelDetailedViewController.h"
+#include "ChannelListVideo.h"
 
 
 ChannelDetailedViewController::ChannelDetailedViewController():m_cDropDownView(NULL) {
@@ -52,6 +53,8 @@ void ChannelDetailedViewController::viewDidLoad() {
     
     this->getView()->setColor(CAColor_black);
     
+    this->loadTitleList();
+    
 }
 
 void ChannelDetailedViewController::viewDidUnload() {
@@ -90,7 +93,9 @@ void ChannelDetailedViewController::loadNavigationIemt() {
     fanhuiBtn->addTarget(this, CAControl_selector(ChannelDetailedViewController::onFanHui), CAControlEventTouchUpInSide);
     view->addSubview(fanhuiBtn);
     
-    m_dropDownBtn = CAButton::createWithCenter(CADipRect(viewSize.width / 2,(viewSize.height + 40) / 2,38*3,50), CAButtonTypeCustom);
+    long titleLen = StringUtils::getCharacterCountInUTF8String(reustChannelTitle());
+    
+    m_dropDownBtn = CAButton::createWithCenter(CADipRect(viewSize.width / 2,(viewSize.height + 40) / 2,38*(titleLen+1),50), CAButtonTypeCustom);
     
     CADipSize btnSize = m_dropDownBtn->getBounds().size;
     
@@ -99,7 +104,7 @@ void ChannelDetailedViewController::loadNavigationIemt() {
 
 
     CALabel *title = CALabel::createWithFrame(CADipRect(0,0,btnSize.width - 38,btnSize.height));
-    title->setText(UTF8("全部"));
+    title->setText(reustChannelTitle());
     title->setTextAlignment(CATextAlignmentLeft);
     title->setVerticalTextAlignmet(CAVerticalTextAlignmentCenter);
     title->setFontSize(_px(38));
@@ -127,6 +132,22 @@ void ChannelDetailedViewController::onFanHui(CAControl *btn, CCPoint point) {
     RootWindow::create()->getNavigationController()->popViewControllerAnimated(true);
 }
 
+std::string ChannelDetailedViewController::reustChannelTitle() {
+    CSJson::Value value1 = m_channel_value["classify1"];
+    CSJson::Value value2 = m_channel_value["classify2"];
+    for (int i = 0; i < value1.size(); i++) {
+        if (value1[i]["id"].asInt() == m_channel_id) {
+            return value1[i]["title"].asString();
+        }
+    }
+    
+    for (int j = 0; j < value2.size(); j++) {
+        if (value2[j]["id"].asInt() == m_channel_id) {
+            return value2[j]["title"].asString();
+        }
+    }
+    return "全部";
+}
 
 void ChannelDetailedViewController::onDropDwon(CAControl *btn,CCPoint point) {
     
@@ -199,5 +220,32 @@ void ChannelDetailedViewController::setDorDwonAttr(std::string title,int channel
     currTitle->setText(title);
     
     
+}
+
+
+void ChannelDetailedViewController::loadTitleList() {
+    
+    CSJson::Value value1 = m_channel_value["classify1"];
+    CSJson::Value value2 = m_channel_value["classify2"];
+    
+    CSJson::Value currValue;
+    
+    for (int i = 0; i < value1.size(); i++) {
+        if (value1[i]["id"].asInt() == m_channel_id) {
+            currValue = value1;
+            break;
+        }
+    }
+    
+    for (int j = 0; j < value2.size(); j++) {
+        if (value2[j]["id"].asInt() == m_channel_id) {
+            currValue = value2;
+            break;
+        }
+    }
+    
+    ChannelListVideo *titleList = ChannelListVideo::createWithFrame(CADipRect(0,130,winSize.width,winSize.height - 130));
+    titleList->initListView(currValue);
+    this->getView()->addSubview(titleList);
 }
 

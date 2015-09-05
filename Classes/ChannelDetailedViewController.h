@@ -32,6 +32,10 @@ public:
     
     void setDorDwonAttr(std::string title,int channel_id);
     
+    std::string reustChannelTitle();
+    
+    void loadTitleList();
+    
 private:
     void loadNavigationIemt();
     
