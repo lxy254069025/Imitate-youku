@@ -14,4 +14,6 @@
 ![](https://github.com/lxy254069025/Imitate-youku/blob/master/iosimage/IMG_0107.PNG?raw=true)
 ![](https://github.com/lxy254069025/Imitate-youku/blob/master/iosimage/IMG_0108.PNG?raw=true)
 ![](https://github.com/lxy254069025/Imitate-youku/blob/master/iosimage/IMG_0109.PNG?raw=true)
+![](https://github.com/lxy254069025/Imitate-youku/blob/master/iosimage/IMG_0120.PNG?raw=true)
+![](https://github.com/lxy254069025/Imitate-youku/blob/master/iosimage/IMG_0121.PNG?raw=true)
 ![](https://github.com/lxy254069025/Imitate-youku/blob/master/iosgif.gif?raw=true)
