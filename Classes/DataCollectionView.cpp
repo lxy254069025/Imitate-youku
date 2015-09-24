@@ -328,3 +328,7 @@ void DataCollectionView::collectionViewDidSelectCellAtIndexPath(CACollectionView
 
 void DataCollectionView::collectionViewDidDeselectCellAtIndexPath(CACollectionView *collectionView, unsigned int section, unsigned int row, unsigned int item) {
 }
+
+void DataCollectionView::collectionViewWillDisplayCellAtIndex(CACollectionView* table, CACollectionViewCell* cell, unsigned int section, unsigned int row, unsigned int item) {
+    CCLog("试试就试试%d",row*2 + item);
+}

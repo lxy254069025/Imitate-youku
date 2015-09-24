@@ -807,6 +807,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (297HJMGP7U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Feng Hou (297HJMGP7U)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -838,7 +839,6 @@
 					"\"$(SRCROOT)/../../../extensions/libwebsockets/ios/lib\"",
 					"\"$(SRCROOT)/../../../CrossApp/the_third_party/curl/prebuilt/ios\"",
 					"$(PROJECT_DIR)",
-					/Users/luxixi/Documents/app/CrossApp/projects/youku/classes/ffmpeg/lib,
 					"\"$(SRCROOT)/../../../extensions/libwebsockets/ios/include\"",
 				);
 				OTHER_CFLAGS = "-O2";
@@ -848,7 +848,7 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
-				VALID_ARCHS = "armv6 armv7 arm64";
+				VALID_ARCHS = "armv7 arm64";
 			};
 			name = Debug;
 		};
@@ -862,6 +862,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Wei Feng Hou (297HJMGP7U)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Wei Feng Hou (297HJMGP7U)";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -891,7 +892,6 @@
 					"\"$(SRCROOT)/../../../extensions/libwebsockets/ios/lib\"",
 					"\"$(SRCROOT)/../../../CrossApp/the_third_party/curl/prebuilt/ios\"",
 					"$(PROJECT_DIR)",
-					/Users/luxixi/Documents/app/CrossApp/projects/youku/classes/ffmpeg/lib,
 					"\"$(SRCROOT)/../../../extensions/libwebsockets/ios/include\"",
 				);
 				PRODUCT_NAME = youku;
@@ -901,7 +901,7 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
-				VALID_ARCHS = "armv6 armv7 arm64";
+				VALID_ARCHS = "armv7 arm64";
 			};
 			name = Release;
 		};

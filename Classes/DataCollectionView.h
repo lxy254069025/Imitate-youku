@@ -52,6 +52,8 @@ public:
     
     virtual void collectionViewDidDeselectCellAtIndexPath(CACollectionView *collectionView, unsigned int section, unsigned int row, unsigned int item);
     
+    virtual void collectionViewWillDisplayCellAtIndex(CACollectionView* table, CACollectionViewCell* cell, unsigned int section, unsigned int row, unsigned int item);
+    
     virtual void scrollViewHeaderBeginRefreshing(CAScrollView* view);
     
     virtual void scrollViewFooterBeginRefreshing(CAScrollView* view);
